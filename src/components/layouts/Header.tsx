@@ -22,7 +22,7 @@ const Header = () => {
         entries.forEach((entry) => setIsOverHero(!entry.isIntersecting));
       },
       {
-        threshold: 0.01,
+        threshold: 0.1,
       }
     );
 
@@ -41,7 +41,7 @@ const Header = () => {
   return (
     <header
       className={cn(
-        'fixed w-full max-w-360 mx-auto',
+        'fixed w-full max-w-360 mx-auto z-50',
         isScroll && 'backdrop-blur-2xl',
         isOverHero ? 'text-neutral-950' : 'text-neutral-25'
       )}
