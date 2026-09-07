@@ -1,6 +1,6 @@
-import project1 from '@/assets/images/projects/project1.png';
-import project2 from '@/assets/images/projects/project2.png';
-import project3 from '@/assets/images/projects/project3.png';
+import project1 from '@/assets/images/projects/project1.webp';
+import project2 from '@/assets/images/projects/project2.webp';
+import project3 from '@/assets/images/projects/project3.webp';
 import type { SectionHeader } from '@/types/sectionHeader';
 
 export type CategoryType =

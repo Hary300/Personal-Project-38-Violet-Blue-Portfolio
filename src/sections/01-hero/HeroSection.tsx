@@ -6,7 +6,7 @@ const HeroSection = () => {
       sectionId='home'
       hasGap={false}
       hasPy={false}
-      className='pt-34.25 lg:pt-36.5 lg:pb-37 h-209.5 sm:h-256'
+      className='pt-34.25 lg:pt-36.5 lg:pb-37 h-209.5 sm:h-256 bg-neutral-950'
     >
       HeroSection
     </SectionWrapper>

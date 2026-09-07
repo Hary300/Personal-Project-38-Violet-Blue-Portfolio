@@ -203,7 +203,11 @@
   |--------------------
   */
 
-  --gradient-purple: linear-gradient(90deg, #9747ff 0%, #1179fc 100%);
+  --background-image-gradient-purple: linear-gradient(
+    90deg,
+    #9747ff 0%,
+    #1179fc 100%
+  );
 
   /*
   |--------------------
@@ -333,6 +337,11 @@
 /*
   ---break---
   */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
 
 @layer base {
   * {

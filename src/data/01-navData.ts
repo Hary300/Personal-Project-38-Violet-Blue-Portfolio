@@ -1,5 +1,6 @@
+import LogoIcon from '@/assets/icons/react-component-icon/LogoIcon';
+import type { ComponentType, SVGProps } from 'react';
 import type { IconType } from 'react-icons';
-import logo from '@/assets/images/logo.svg';
 import { HiOutlineMail } from 'react-icons/hi';
 
 export type Href =
@@ -24,7 +25,7 @@ export interface CtaButton {
 
 export interface NavbarLogo {
   text: string;
-  imageSrc: string;
+  image: ComponentType<SVGProps<SVGSVGElement>>;
   href: '#home';
 }
 
@@ -37,7 +38,7 @@ export interface NavData {
 export const navData: NavData = {
   logo: {
     text: 'Your Logo',
-    imageSrc: logo,
+    image: LogoIcon,
     href: '#home',
   },
   navItems: [

@@ -1,5 +1,14 @@
+import SectionWrapper from '@/components/layouts/SectionWrapper';
+import SectionTitle from '@/components/shared/SectionTitle';
+import { projectsData } from '@/data/06-projectsData';
+
 const ProjectSection = () => {
-  return <div>ProjectSection</div>;
+  const header = projectsData.header;
+  return (
+    <SectionWrapper sectionId='projects'>
+      <SectionTitle title={header.title} badgeText={header.badge} />
+    </SectionWrapper>
+  );
 };
 
 export default ProjectSection;

@@ -5,7 +5,7 @@ interface SectionTitleProps {
 
 const SectionTitle = ({ title, badgeText }: SectionTitleProps) => {
   return (
-    <div className='flex flex-col gap-3 lg:gap-4 items-center'>
+    <div className='flex flex-col gap-3 lg:gap-4 items-center text-center'>
       <p className='text-neutral-700 text-xs lg:text-sm rounded-4xl px-3 py-0.5 border w-fit'>
         {badgeText}
       </p>
