@@ -33,7 +33,7 @@ export const skillData: SkillData = {
     {
       id: 'html',
       name: 'HTML',
-      percentage: 90,
+      percentage: 95,
       description:
         'Building the structure of web pages with semantic markup for accessibility.',
       icon: html,
@@ -48,7 +48,7 @@ export const skillData: SkillData = {
     {
       id: 'javascript',
       name: 'Javascript',
-      percentage: 90,
+      percentage: 80,
       description:
         'Building the structure of web pages with semantic markup for accessibility.',
       icon: js,
@@ -56,7 +56,7 @@ export const skillData: SkillData = {
     {
       id: 'react-js',
       name: 'React JS',
-      percentage: 90,
+      percentage: 85,
       description:
         'Building the structure of web pages with semantic markup for accessibility.',
       icon: react,
@@ -64,7 +64,7 @@ export const skillData: SkillData = {
     {
       id: 'mongo-db',
       name: 'Mongo DB',
-      percentage: 90,
+      percentage: 80,
       description:
         'Building the structure of web pages with semantic markup for accessibility.',
       icon: mongo,
@@ -72,7 +72,7 @@ export const skillData: SkillData = {
     {
       id: 'docker',
       name: 'Docker',
-      percentage: 90,
+      percentage: 70,
       description:
         'Building the structure of web pages with semantic markup for accessibility.',
       icon: docker,
@@ -80,7 +80,7 @@ export const skillData: SkillData = {
     {
       id: 'typescript',
       name: 'Typescript',
-      percentage: 90,
+      percentage: 80,
       description:
         'Building the structure of web pages with semantic markup for accessibility.',
       icon: ts,
@@ -96,14 +96,14 @@ export const skillData: SkillData = {
     {
       id: 'express-js',
       name: 'Express JS',
-      percentage: 85,
+      percentage: 75,
       description: 'Building robust RESTful APIs and backend web applications.',
       icon: ex,
     },
     {
       id: 'postgresql',
       name: 'PostgreSQL',
-      percentage: 85,
+      percentage: 70,
       description:
         'Managing relational databases with complex queries and data integrity.',
       icon: postgres,
@@ -111,7 +111,7 @@ export const skillData: SkillData = {
     {
       id: 'sequelize',
       name: 'Sequelize',
-      percentage: 80,
+      percentage: 70,
       description:
         'Handling Object-Relational Mapping (ORM) for Node.js and SQL databases.',
       icon: sequelize,
