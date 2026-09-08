@@ -1,19 +1,27 @@
 import { useEffect, useState } from 'react';
 
-const useIsDesktop = () => {
+interface UseScreenSizeProps {
+  screenSize: 'desktop' | 'tablet';
+}
+
+const useScreenSize = ({ screenSize }: UseScreenSizeProps) => {
   const [isDesktop, setIsDesktop] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDesktop(window.innerWidth > 768);
+      const size = screenSize === 'desktop' ? 768 : 640;
+      setIsDesktop(window.innerWidth > size);
     };
+
+    handleResize();
 
     window.addEventListener('resize', handleResize);
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, [screenSize]);
+
   return isDesktop;
 };
 
-export default useIsDesktop;
+export default useScreenSize;

@@ -15,7 +15,7 @@ interface SectionWrapperProps {
   children: ReactNode;
   className?: string;
   hasGap?: boolean;
-  hasBigScreenPx?: boolean;
+  noBigScreenPx?: boolean;
   hasPy?: boolean;
 }
 
@@ -24,16 +24,16 @@ const SectionWrapper = ({
   children,
   className,
   hasGap = true,
-  hasBigScreenPx = true,
+  noBigScreenPx = false,
   hasPy = true,
 }: SectionWrapperProps) => {
   return (
     <section
       id={sectionId}
       className={cn(
-        'px-4',
+        'px-4 sm:px-10 lg:px-15 xl:px-30',
         hasGap && 'flex flex-col gap-6 lg:gap-12',
-        hasBigScreenPx && 'sm:px-10 lg:px-15 xl:px-30',
+        noBigScreenPx && 'sm:px-0 lg:px-0 xl:px-0',
         hasPy && 'py-10 lg:py-20',
         className
       )}

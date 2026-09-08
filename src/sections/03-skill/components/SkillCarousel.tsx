@@ -14,7 +14,7 @@ interface SkillGridProps {
   array: SkillItem[];
   size: number;
 }
-const SkillGrid = ({ array, size }: SkillGridProps) => {
+const SkillCarousel = ({ array, size }: SkillGridProps) => {
   const slides = chunk(array, size);
   return (
     <Carousel className='w-full flex flex-col gap-4 lg:gap-8 items-center'>
@@ -59,4 +59,4 @@ const SkillGrid = ({ array, size }: SkillGridProps) => {
   );
 };
 
-export default SkillGrid;
+export default SkillCarousel;
