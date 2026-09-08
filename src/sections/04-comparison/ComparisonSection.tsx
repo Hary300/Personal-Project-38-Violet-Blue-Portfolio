@@ -50,14 +50,16 @@ const ComparisonSection = () => {
               {card.features.map((feature, index) => (
                 <li
                   key={index}
-                  className='flex gap-2 items-center justify-center'
+                  className='flex gap-2 items-center justify-center text-center w-full'
                 >
                   {card.isHighlighted ? (
                     <FaCheck />
                   ) : (
                     <RxCross2 className='text-red-500 stroke-2' />
                   )}
-                  <span>{feature}</span>
+                  <span className='text-[clamp(0.75rem,-0.3929rem+5.7143vw,1.125rem)]'>
+                    {feature}
+                  </span>
                 </li>
               ))}
             </ul>
