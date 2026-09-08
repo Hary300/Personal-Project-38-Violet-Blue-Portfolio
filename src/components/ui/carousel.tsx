@@ -5,7 +5,6 @@ import useEmblaCarousel, {
 } from 'embla-carousel-react';
 
 import { Button } from '@/components/ui/button';
-import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 import { IoArrowBack, IoArrowForward } from 'react-icons/io5';
 
 type CarouselApi = UseEmblaCarouselType[1];
@@ -131,13 +130,19 @@ function Carousel({
   );
 }
 
-function CarouselContent({ className, ...props }: React.ComponentProps<'div'>) {
+function CarouselContent({
+  containerClassName,
+  className,
+  ...props
+}: React.ComponentProps<'div'> & {
+  containerClassName?: string;
+}) {
   const { carouselRef, orientation } = useCarousel();
 
   return (
     <div
       ref={carouselRef}
-      className='overflow-hidden'
+      className={cn('overflow-hidden', containerClassName)}
       data-slot='carousel-content'
     >
       <div

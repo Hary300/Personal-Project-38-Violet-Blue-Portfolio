@@ -12,12 +12,12 @@ const TestimonialsCarousel = () => {
   const testimonials = testimonialsData.testimonials;
 
   return (
-    <Carousel className='flex flex-col gap-4 lg:gap-6'>
-      <CarouselContent>
+    <Carousel className='w-full flex flex-col gap-4 lg:gap-6 '>
+      <CarouselContent containerClassName='sm:overflow-visible'>
         {testimonials.map((testimonial) => (
           <CarouselItem
             key={testimonial.id}
-            className='basis-full sm:basis-auto sm:w-100'
+            className='basis-full sm:basis-auto sm:w-100 '
           >
             <div className='flex flex-col gap-8 lg:gap-12 border p-4 lg:p-6 rounded-2xl h-full justify-between hover:bg-gradient-purple hover:text-white group'>
               <div className='max-w-16.5 sm:max-w-33.25 w-full'>

@@ -6,7 +6,7 @@ import TestimonialsCarousel from './components/TestimonialsCarousel';
 const TestimonialsSection = () => {
   const header = testimonialsData.header;
   return (
-    <SectionWrapper sectionId='testimonials'>
+    <SectionWrapper sectionId='testimonials' className='overflow-hidden'>
       <SectionTitle title={header.title} badgeText={header.badge} />
       <TestimonialsCarousel />
     </SectionWrapper>

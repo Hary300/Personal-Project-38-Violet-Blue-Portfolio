@@ -10,7 +10,7 @@ const ProjectSection = () => {
   const size = useScreenSize({ screenSize: 'tablet' }) ? 1 : 2;
   console.log(size);
   return (
-    <SectionWrapper sectionId='projects' noBigScreenPx>
+    <SectionWrapper sectionId='projects' className='overflow-hidden'>
       <SectionTitle title={header.title} badgeText={header.badge} />
       <ProjectCarousel projects={projects} size={size} />
     </SectionWrapper>
