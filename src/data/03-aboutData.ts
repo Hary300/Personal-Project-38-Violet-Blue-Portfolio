@@ -1,10 +1,14 @@
 import type { SectionHeader } from '@/types/sectionHeader';
 import { projectsData } from './06-projectsData';
 import folder from '@/assets/icons/aboutMe/folder.svg';
+import landingPageIcon from '@/assets/icons/aboutMe/landingPageIcon.svg';
+import dashboardSaasIcon from '@/assets/icons/aboutMe/dashboardSaasIcon.svg';
+import companyProfileIcon from '@/assets/icons/aboutMe/companyProfileIcon.svg';
 
 export interface ServiceCategory {
   id: string;
   title: string;
+  bgColor: string;
   projectCount: number;
   icon: string;
 }
@@ -44,20 +48,23 @@ export const aboutData: AboutData = {
     {
       id: '1',
       title: 'Landing Page',
+      bgColor: 'bg-accent-blue',
       projectCount: totalLandingPage,
-      icon: 'monitor',
+      icon: landingPageIcon,
     },
     {
       id: '2',
       title: 'Dashboard Saas',
+      bgColor: 'bg-primary-200',
       projectCount: totalDashboardSaas,
-      icon: 'layout',
+      icon: dashboardSaasIcon,
     },
     {
       id: '3',
       title: 'Company Profile',
+      bgColor: 'bg-accent-pink',
       projectCount: totalCompanyProfile,
-      icon: 'briefcase',
+      icon: companyProfileIcon,
     },
   ],
   stats: [
