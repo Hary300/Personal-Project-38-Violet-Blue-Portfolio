@@ -204,8 +204,10 @@
   */
 
   --background-image-gradient-purple: linear-gradient(
-    90deg,
+    120deg,
     #9747ff 0%,
+    #9747ff 40%,
+    #6253ff 70%,
     #1179fc 100%
   );
 

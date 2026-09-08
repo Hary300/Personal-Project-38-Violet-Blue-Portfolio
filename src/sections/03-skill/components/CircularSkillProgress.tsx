@@ -11,14 +11,7 @@ const CircularSkillProgress = ({ skill }: CircularSkillProgressProps) => {
       <span>{skill.percentage}%</span>
       <svg viewBox='0 0 100 100' className='absolute inset-0 w-full h-full '>
         <defs>
-          <linearGradient
-            id={gradientId}
-            gradientUnits='userSpaceOnUse'
-            x1='0%'
-            y1='50%'
-            x2='100%'
-            y2='0%'
-          >
+          <linearGradient id={gradientId} x1='0%' y1='50%' x2='100%' y2='0%'>
             <stop offset='0%' stopColor='#9747ff' />
             <stop offset='35%' stopColor='#9747ff' />
             <stop offset='100%' stopColor='#6958ff' />

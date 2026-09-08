@@ -3,8 +3,8 @@ import Header from '@/components/layouts/Header';
 import HeroSection from '@/sections/01-hero';
 import AboutSection from '@/sections/02-about';
 import SkillSection from '@/sections/03-skill';
-import ProjectSection from '@/sections/04-project';
-import ComparisonSection from '@/sections/05-comparison';
+import ProjectSection from '@/sections/05-project';
+import ComparisonSection from '@/sections/04-comparison';
 import CareerSection from '@/sections/06-career';
 import TestimonialsSection from '@/sections/07-testimonials';
 import FaqSection from '@/sections/08-faq';
@@ -17,8 +17,8 @@ function App() {
       <HeroSection />
       <AboutSection />
       <SkillSection />
-      <ProjectSection />
       <ComparisonSection />
+      <ProjectSection />
       <CareerSection />
       <TestimonialsSection />
       <FaqSection />

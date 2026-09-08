@@ -1,5 +1,5 @@
 import type { SectionHeader } from '@/types/sectionHeader';
-import { projectsData } from './06-projectsData';
+import { projectsData } from './07-projectsData';
 import folder from '@/assets/icons/aboutMe/folder.svg';
 import landingPageIcon from '@/assets/icons/aboutMe/landingPageIcon.svg';
 import dashboardSaasIcon from '@/assets/icons/aboutMe/dashboardSaasIcon.svg';
