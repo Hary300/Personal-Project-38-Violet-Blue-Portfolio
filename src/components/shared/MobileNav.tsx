@@ -41,7 +41,9 @@ const MobileNav = () => {
               {navLinks.map((link) => (
                 <li key={link.id}>
                   <SheetPrimitive.Close data-slot='sheet-close' asChild>
-                    <a href={link.href}>{link.label}</a>
+                    <a href={link.href} className='hover:underline'>
+                      {link.label}
+                    </a>
                   </SheetPrimitive.Close>
                 </li>
               ))}
