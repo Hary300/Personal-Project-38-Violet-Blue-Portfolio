@@ -184,7 +184,7 @@ function CarouselPrevious({
       variant={variant}
       size={size}
       className={cn(
-        'absolute touch-manipulation rounded-full',
+        'absolute touch-manipulation rounded-full size-12 lg:size-16 p-px bg-gradient-purple',
         orientation === 'horizontal'
           ? 'inset-y-0 -left-12 my-auto'
           : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
@@ -194,8 +194,10 @@ function CarouselPrevious({
       onClick={scrollPrev}
       {...props}
     >
-      <IoArrowBack />
-      <span className='sr-only'>Previous slide</span>
+      <div className='bg-neutral-25 size-full rounded-full flex justify-center items-center'>
+        <IoArrowBack className='size-4.5 lg:size-6' />
+        <span className='sr-only'>Previous slide</span>
+      </div>
     </Button>
   );
 }
@@ -214,7 +216,7 @@ function CarouselNext({
       variant={variant}
       size={size}
       className={cn(
-        'absolute touch-manipulation rounded-full',
+        'absolute touch-manipulation rounded-full size-12 lg:size-16 p-px bg-gradient-purple',
         orientation === 'horizontal'
           ? 'inset-y-0 -right-12 my-auto'
           : '-bottom-12 left-1/2 -translate-x-1/2 rotate-90',
@@ -224,8 +226,10 @@ function CarouselNext({
       onClick={scrollNext}
       {...props}
     >
-      <IoArrowForward />
-      <span className='sr-only'>Next slide</span>
+      <div className='bg-neutral-25 size-full rounded-full flex justify-center items-center'>
+        <IoArrowForward className='size-4.5 lg:size-6' />
+        <span className='sr-only'>Next slide</span>
+      </div>
     </Button>
   );
 }
